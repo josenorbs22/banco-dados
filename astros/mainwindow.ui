@@ -1,0 +1,2651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Astros</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(205, 216, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>117</width>
+      <height>612</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="menu">
+     <item>
+      <widget class="QPushButton" name="abrirFeed">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>70</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-color: rgb(255, 255, 255);
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(181, 168, 255, 213), stop:1 rgba(195, 187, 255, 4));
+border-radius: 0px;</string>
+       </property>
+       <property name="text">
+        <string>Home</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="novoAvistamento">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>70</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-color: rgb(255, 255, 255);
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(181, 168, 255, 213), stop:1 rgba(195, 187, 255, 4));
+border-radius: 0px;</string>
+       </property>
+       <property name="text">
+        <string>Novo Avistamento</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="listaAvistamentos">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>70</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-color: rgb(255, 255, 255);
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(181, 168, 255, 213), stop:1 rgba(195, 187, 255, 4));
+border-radius: 0px;</string>
+       </property>
+       <property name="text">
+        <string>Lista de Avistamentos</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="novoAstro">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>70</height>
+        </size>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="palette">
+        <palette>
+         <active>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Button">
+           <brush brushstyle="RadialGradientPattern">
+            <gradient centralx="0.500000000000000" centraly="0.500000000000000" focalx="0.500000000000000" focaly="0.500000000000000" radius="0.500000000000000" type="RadialGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+             <gradientstop position="0.000000000000000">
+              <color alpha="213">
+               <red>181</red>
+               <green>168</green>
+               <blue>255</blue>
+              </color>
+             </gradientstop>
+             <gradientstop position="1.000000000000000">
+              <color alpha="4">
+               <red>195</red>
+               <green>187</green>
+               <blue>255</blue>
+              </color>
+             </gradientstop>
+            </gradient>
+           </brush>
+          </colorrole>
+          <colorrole role="Light">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Midlight">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>227</red>
+             <green>227</green>
+             <blue>227</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Dark">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>160</red>
+             <green>160</green>
+             <blue>160</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Mid">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>160</red>
+             <green>160</green>
+             <blue>160</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="BrightText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="ButtonText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Base">
+           <brush brushstyle="RadialGradientPattern">
+            <gradient centralx="0.500000000000000" centraly="0.500000000000000" focalx="0.500000000000000" focaly="0.500000000000000" radius="0.500000000000000" type="RadialGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+             <gradientstop position="0.000000000000000">
+              <color alpha="213">
+               <red>181</red>
+               <green>168</green>
+               <blue>255</blue>
+              </color>
+             </gradientstop>
+             <gradientstop position="1.000000000000000">
+              <color alpha="4">
+               <red>195</red>
+               <green>187</green>
+               <blue>255</blue>
+              </color>
+             </gradientstop>
+            </gradient>
+           </brush>
+          </colorrole>
+          <colorrole role="Window">
+           <brush brushstyle="RadialGradientPattern">
+            <gradient centralx="0.500000000000000" centraly="0.500000000000000" focalx="0.500000000000000" focaly="0.500000000000000" radius="0.500000000000000" type="RadialGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+             <gradientstop position="0.000000000000000">
+              <color alpha="213">
+               <red>181</red>
+               <green>168</green>
+               <blue>255</blue>
+              </color>
+             </gradientstop>
+             <gradientstop position="1.000000000000000">
+              <color alpha="4">
+               <red>195</red>
+               <green>187</green>
+               <blue>255</blue>
+              </color>
+             </gradientstop>
+            </gradient>
+           </brush>
+          </colorrole>
+          <colorrole role="Shadow">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>105</red>
+             <green>105</green>
+             <blue>105</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Highlight">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>0</red>
+             <green>120</green>
+             <blue>215</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="HighlightedText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Link">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>0</red>
+             <green>0</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="LinkVisited">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>0</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="AlternateBase">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>245</red>
+             <green>245</green>
+             <blue>245</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="NoRole">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="ToolTipBase">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>220</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="ToolTipText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="PlaceholderText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="128">
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </active>
+         <inactive>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>208</red>
+             <green>208</green>
+             <blue>208</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Button">
+           <brush brushstyle="RadialGradientPattern">
+            <gradient centralx="0.500000000000000" centraly="0.500000000000000" focalx="0.500000000000000" focaly="0.500000000000000" radius="0.500000000000000" type="RadialGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+             <gradientstop position="0.000000000000000">
+              <color alpha="213">
+               <red>181</red>
+               <green>168</green>
+               <blue>255</blue>
+              </color>
+             </gradientstop>
+             <gradientstop position="1.000000000000000">
+              <color alpha="4">
+               <red>195</red>
+               <green>187</green>
+               <blue>255</blue>
+              </color>
+             </gradientstop>
+            </gradient>
+           </brush>
+          </colorrole>
+          <colorrole role="Light">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Midlight">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>227</red>
+             <green>227</green>
+             <blue>227</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Dark">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>64</red>
+             <green>65</green>
+             <blue>66</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Mid">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>160</red>
+             <green>160</green>
+             <blue>160</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>208</red>
+             <green>208</green>
+             <blue>208</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="BrightText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>51</green>
+             <blue>51</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="ButtonText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>208</red>
+             <green>208</green>
+             <blue>208</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Base">
+           <brush brushstyle="RadialGradientPattern">
+            <gradient centralx="0.500000000000000" centraly="0.500000000000000" focalx="0.500000000000000" focaly="0.500000000000000" radius="0.500000000000000" type="RadialGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+             <gradientstop position="0.000000000000000">
+              <color alpha="213">
+               <red>181</red>
+               <green>168</green>
+               <blue>255</blue>
+              </color>
+             </gradientstop>
+             <gradientstop position="1.000000000000000">
+              <color alpha="4">
+               <red>195</red>
+               <green>187</green>
+               <blue>255</blue>
+              </color>
+             </gradientstop>
+            </gradient>
+           </brush>
+          </colorrole>
+          <colorrole role="Window">
+           <brush brushstyle="RadialGradientPattern">
+            <gradient centralx="0.500000000000000" centraly="0.500000000000000" focalx="0.500000000000000" focaly="0.500000000000000" radius="0.500000000000000" type="RadialGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+             <gradientstop position="0.000000000000000">
+              <color alpha="213">
+               <red>181</red>
+               <green>168</green>
+               <blue>255</blue>
+              </color>
+             </gradientstop>
+             <gradientstop position="1.000000000000000">
+              <color alpha="4">
+               <red>195</red>
+               <green>187</green>
+               <blue>255</blue>
+              </color>
+             </gradientstop>
+            </gradient>
+           </brush>
+          </colorrole>
+          <colorrole role="Shadow">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>105</red>
+             <green>105</green>
+             <blue>105</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Highlight">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>29</red>
+             <green>84</green>
+             <blue>92</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="HighlightedText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>240</red>
+             <green>240</green>
+             <blue>240</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Link">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>0</red>
+             <green>122</green>
+             <blue>244</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="LinkVisited">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>165</red>
+             <green>122</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="AlternateBase">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>53</red>
+             <green>54</green>
+             <blue>55</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="NoRole">
+           <brush brushstyle="NoBrush">
+            <color alpha="255">
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="ToolTipBase">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>64</red>
+             <green>65</green>
+             <blue>66</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="ToolTipText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>208</red>
+             <green>208</green>
+             <blue>208</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="PlaceholderText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>127</red>
+             <green>127</green>
+             <blue>128</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </inactive>
+         <disabled>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>120</red>
+             <green>120</green>
+             <blue>120</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Button">
+           <brush brushstyle="RadialGradientPattern">
+            <gradient centralx="0.500000000000000" centraly="0.500000000000000" focalx="0.500000000000000" focaly="0.500000000000000" radius="0.500000000000000" type="RadialGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+             <gradientstop position="0.000000000000000">
+              <color alpha="213">
+               <red>181</red>
+               <green>168</green>
+               <blue>255</blue>
+              </color>
+             </gradientstop>
+             <gradientstop position="1.000000000000000">
+              <color alpha="4">
+               <red>195</red>
+               <green>187</green>
+               <blue>255</blue>
+              </color>
+             </gradientstop>
+            </gradient>
+           </brush>
+          </colorrole>
+          <colorrole role="Light">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Midlight">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>247</red>
+             <green>247</green>
+             <blue>247</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Dark">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>160</red>
+             <green>160</green>
+             <blue>160</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Mid">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>160</red>
+             <green>160</green>
+             <blue>160</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>120</red>
+             <green>120</green>
+             <blue>120</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="BrightText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="ButtonText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>120</red>
+             <green>120</green>
+             <blue>120</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Base">
+           <brush brushstyle="RadialGradientPattern">
+            <gradient centralx="0.500000000000000" centraly="0.500000000000000" focalx="0.500000000000000" focaly="0.500000000000000" radius="0.500000000000000" type="RadialGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+             <gradientstop position="0.000000000000000">
+              <color alpha="213">
+               <red>181</red>
+               <green>168</green>
+               <blue>255</blue>
+              </color>
+             </gradientstop>
+             <gradientstop position="1.000000000000000">
+              <color alpha="4">
+               <red>195</red>
+               <green>187</green>
+               <blue>255</blue>
+              </color>
+             </gradientstop>
+            </gradient>
+           </brush>
+          </colorrole>
+          <colorrole role="Window">
+           <brush brushstyle="RadialGradientPattern">
+            <gradient centralx="0.500000000000000" centraly="0.500000000000000" focalx="0.500000000000000" focaly="0.500000000000000" radius="0.500000000000000" type="RadialGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+             <gradientstop position="0.000000000000000">
+              <color alpha="213">
+               <red>181</red>
+               <green>168</green>
+               <blue>255</blue>
+              </color>
+             </gradientstop>
+             <gradientstop position="1.000000000000000">
+              <color alpha="4">
+               <red>195</red>
+               <green>187</green>
+               <blue>255</blue>
+              </color>
+             </gradientstop>
+            </gradient>
+           </brush>
+          </colorrole>
+          <colorrole role="Shadow">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Highlight">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>29</red>
+             <green>84</green>
+             <blue>92</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="HighlightedText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>240</red>
+             <green>240</green>
+             <blue>240</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Link">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>0</red>
+             <green>122</green>
+             <blue>244</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="LinkVisited">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>165</red>
+             <green>122</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="AlternateBase">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>53</red>
+             <green>54</green>
+             <blue>55</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="NoRole">
+           <brush brushstyle="NoBrush">
+            <color alpha="255">
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="ToolTipBase">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>64</red>
+             <green>65</green>
+             <blue>66</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="ToolTipText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>208</red>
+             <green>208</green>
+             <blue>208</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="PlaceholderText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>127</red>
+             <green>127</green>
+             <blue>128</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </disabled>
+        </palette>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-color: rgb(255, 255, 255);
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(181, 168, 255, 213), stop:1 rgba(195, 187, 255, 4));
+border-radius: 0px;</string>
+       </property>
+       <property name="text">
+        <string>Novo Astro</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="listaAstros">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>70</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-color: rgb(255, 255, 255);
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(181, 168, 255, 213), stop:1 rgba(195, 187, 255, 4));
+border-radius: 0px;</string>
+       </property>
+       <property name="text">
+        <string>Lista de
+Astros</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="novoSistemaSolar">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>70</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-color: rgb(255, 255, 255);
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(181, 168, 255, 213), stop:1 rgba(195, 187, 255, 4));
+border-radius: 0px;
+</string>
+       </property>
+       <property name="text">
+        <string>Novo
+ Sistema Solar</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="listaSistemaSolares">
+       <property name="minimumSize">
+        <size>
+         <width>1</width>
+         <height>70</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-color: rgb(255, 255, 255);
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(181, 168, 255, 213), stop:1 rgba(195, 187, 255, 4));
+border-radius: 0px;</string>
+       </property>
+       <property name="text">
+        <string>Lista de
+Sistemas Solares</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="equipamentos">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>70</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-color: rgb(255, 255, 255);
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(181, 168, 255, 213), stop:1 rgba(195, 187, 255, 4));
+border-radius: 0px;</string>
+       </property>
+       <property name="text">
+        <string>Equipamentos</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>0</y>
+      <width>1141</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="newAstro">
+     <widget class="QWidget" name="formLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>421</width>
+        <height>165</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout">
+       <property name="verticalSpacing">
+        <number>15</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Nome:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="nomeAstro"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Declinação:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QSpinBox" name="horaDec">
+           <property name="maximum">
+            <number>11</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_9">
+           <property name="maximumSize">
+            <size>
+             <width>10</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>h</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="minDec">
+           <property name="maximum">
+            <number>59</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_7">
+           <property name="maximumSize">
+            <size>
+             <width>10</width>
+             <height>10</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>m</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="secDec">
+           <property name="maximum">
+            <number>59</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_8">
+           <property name="maximumSize">
+            <size>
+             <width>10</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>s</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Ascenção Reta:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QSpinBox" name="grauAR">
+           <property name="maximum">
+            <number>90</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_10">
+           <property name="maximumSize">
+            <size>
+             <width>10</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>°</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="minAR">
+           <property name="maximum">
+            <number>59</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_11">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>arcmin</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="secAR">
+           <property name="maximum">
+            <number>59</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_12">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>arcsec</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_13">
+         <property name="text">
+          <string>Distância (anos luz):</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QDoubleSpinBox" name="distanciaAstro">
+         <property name="maximum">
+          <double>999999.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="saveAstro">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>20</y>
+        <width>91</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Salvar</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>200</y>
+        <width>171</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QLabel" name="label_14">
+         <property name="text">
+          <string>Tipo de Astro:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="tipoAstro">
+         <item>
+          <property name="text">
+           <string>Indefinido</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Estrela</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Planeta</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Cometa</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QStackedWidget" name="stackedWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>290</y>
+        <width>611</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>3</number>
+      </property>
+      <widget class="QWidget" name="page_4"/>
+      <widget class="QWidget" name="page_5">
+       <widget class="QWidget" name="formLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>421</width>
+          <height>191</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="formLayout_3">
+         <property name="verticalSpacing">
+          <number>15</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_15">
+           <property name="text">
+            <string>Tipo de estrela:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="tipoEstrela"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_16">
+           <property name="text">
+            <string>Massa estelar (massas solares):</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_17">
+           <property name="text">
+            <string>Raio estelar:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_24">
+           <property name="text">
+            <string>Magnitude Aparente:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QDoubleSpinBox" name="magApa"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QDoubleSpinBox" name="massaEstelar">
+           <property name="maximum">
+            <double>999999.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>100.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QSpinBox" name="raioEstelar"/>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_18">
+           <property name="text">
+            <string>Magnitude Absoluta:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QDoubleSpinBox" name="magAbs">
+           <property name="maximum">
+            <double>9999.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_6">
+       <widget class="QWidget" name="formLayoutWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>421</width>
+          <height>222</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="formLayout_4">
+         <property name="verticalSpacing">
+          <number>15</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_19">
+           <property name="text">
+            <string>Tamanho (kilômetros):</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_20">
+           <property name="text">
+            <string>Exoplaneta?</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_21">
+           <property name="text">
+            <string>Nome do Sistema Solar:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_25">
+           <property name="text">
+            <string>Posição no Sistema Solar:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_22">
+           <property name="text">
+            <string>Principais materiais no planeta:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QDoubleSpinBox" name="tamanhoPlaneta">
+           <property name="accelerated">
+            <bool>true</bool>
+           </property>
+           <property name="maximum">
+            <double>999999999.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>10.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QCheckBox" name="exoPlaneta">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="nomeSSPLaneta"/>
+         </item>
+         <item row="3" column="1">
+          <widget class="QSpinBox" name="posSSPlaneta"/>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="materiaisPlaneta"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_7">
+       <widget class="QWidget" name="formLayoutWidget_5">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>421</width>
+          <height>232</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="formLayout_5">
+         <property name="verticalSpacing">
+          <number>15</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_23">
+           <property name="text">
+            <string>Excentricidade de órbita:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QDoubleSpinBox" name="excenCometa">
+           <property name="maximum">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.000100000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_27">
+           <property name="text">
+            <string>Período de órbita (anos):</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QSpinBox" name="periodoCometa"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_28">
+           <property name="text">
+            <string>Periélio:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QDoubleSpinBox" name="perielioCometa"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_29">
+           <property name="text">
+            <string>Afélio:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QDoubleSpinBox" name="afelioCometa"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="novoAvistamento_2">
+     <widget class="QComboBox" name="locaisAvist">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>110</y>
+        <width>241</width>
+        <height>24</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="maisAstros">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>110</y>
+        <width>31</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px;
+background-color: rgba(255, 255, 255, 0);
+color: rgb(0, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="menosAstros">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>110</y>
+        <width>31</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px;
+color: rgb(255, 0, 0);
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="novoLocal">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>140</y>
+        <width>51</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>+ Local</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="maisEquip">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>290</y>
+        <width>31</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px;
+background-color: rgba(255, 255, 255, 0);
+color: rgb(0, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="menosEquip">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>290</y>
+        <width>31</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px;
+background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_32">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>80</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Local</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_33">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>80</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Astros avistados</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_34">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>260</y>
+        <width>161</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Equipamentos usados</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_35">
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>80</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Imagens</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="selImagens">
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>110</y>
+        <width>111</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Selecionar imagens</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="listadeImagens">
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>150</y>
+        <width>256</width>
+        <height>192</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="salvarAvistamento">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>510</y>
+        <width>121</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(0, 255, 0, 200);
+color: rgb(34, 34, 34);</string>
+      </property>
+      <property name="text">
+       <string>Salvar</string>
+      </property>
+     </widget>
+     <widget class="QDateTimeEdit" name="dataAvistamento">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>210</y>
+        <width>194</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_41">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>180</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Data</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget_7">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>290</y>
+        <width>241</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_10">
+       <item row="0" column="0" colspan="2">
+        <layout class="QVBoxLayout" name="equipsAvist">
+         <item>
+          <widget class="QComboBox" name="equip1"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget_8">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>110</y>
+        <width>241</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_12">
+       <item row="0" column="0" colspan="2">
+        <layout class="QVBoxLayout" name="astrosAvist">
+         <item>
+          <widget class="QComboBox" name="astro1"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="listaAvist">
+     <widget class="QTableWidget" name="tabelaAvists">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>641</width>
+        <height>571</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>Id</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Local</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Data</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Astros</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Equipamentos</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLabel" name="label_43">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>0</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(24, 24, 24);</string>
+      </property>
+      <property name="text">
+       <string>Avistamentos</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="listAstros">
+     <widget class="QTableWidget" name="tableAstro">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>531</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <column>
+       <property name="text">
+        <string>Id</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Nome</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Declinação</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Ascenção reta</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Distância</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>230</y>
+        <width>171</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label_26">
+         <property name="text">
+          <string>Tipo de astro:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="tipoAstroLista">
+         <item>
+          <property name="text">
+           <string>Estrelas</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Planetas</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Cometas</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QStackedWidget" name="stackedWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>320</y>
+        <width>651</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <widget class="QTableWidget" name="tableStars">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>651</width>
+          <height>192</height>
+         </rect>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <column>
+         <property name="text">
+          <string>Id</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Tipo de estrela</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Massa estelar</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Raio estelar</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Mag. Aparente</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Mag. Absoluta</string>
+         </property>
+        </column>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <widget class="QTableWidget" name="tablePlanets">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>651</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <column>
+         <property name="text">
+          <string>Id</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Tamanho</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Exoplaneta?</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Nome SS</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Posição SS</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Materiais</string>
+         </property>
+        </column>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_3">
+       <widget class="QTableWidget" name="tableComets">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>511</width>
+          <height>192</height>
+         </rect>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <column>
+         <property name="text">
+          <string>Id</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Excentricidade</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Período de órbita</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Periélio</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Afélio</string>
+         </property>
+        </column>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>20</y>
+        <width>91</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="menuAstro">
+       <item>
+        <widget class="QPushButton" name="editAstro">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>Editar Astro</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="deleteAstro">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(208, 0, 0, 222);</string>
+         </property>
+         <property name="text">
+          <string>Deletar Astro</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="newSSystem">
+     <widget class="QWidget" name="formLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>421</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_2">
+       <property name="verticalSpacing">
+        <number>15</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Nome:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="nomeSSystem"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Planeta(s):</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <layout class="QVBoxLayout" name="planetsSS">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QComboBox" name="planeta1"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Estrela(s):</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <layout class="QVBoxLayout" name="starsSS">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QComboBox" name="estrela1"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="saveSSystem">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>20</y>
+        <width>91</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Salvar</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="removePlanet_2">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>53</y>
+        <width>30</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>30</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 0, 0);
+font: 18pt &quot;Segoe UI&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="morePlanet_2">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>53</y>
+        <width>30</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>30</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 255, 0);
+font: 18pt &quot;Segoe UI&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="moreStar_2">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>100</y>
+        <width>30</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>30</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 255, 0);
+font: 18pt &quot;Segoe UI&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="removeStar_2">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>100</y>
+        <width>30</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>30</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 0, 0);
+font: 18pt &quot;Segoe UI&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="listSSystems">
+     <widget class="QTableWidget" name="tableSSystems">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>511</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <column>
+       <property name="text">
+        <string>Id</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Nome</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Planetas</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Estrelas</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>260</y>
+        <width>131</width>
+        <height>102</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(200, 0, 0, 230);</string>
+         </property>
+         <property name="text">
+          <string>Deletar</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="equipamentos_2">
+     <widget class="QWidget" name="formLayoutWidget_6">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>90</y>
+        <width>291</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_6">
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="nomeEquip">
+         <property name="placeholderText">
+          <string>Nome do equipamento novo</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_36">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(22, 22, 22);</string>
+         </property>
+         <property name="text">
+          <string>Nome</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="marcaEquip">
+         <property name="placeholderText">
+          <string>Marca do equipamento</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_37">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(22, 22, 22);</string>
+         </property>
+         <property name="text">
+          <string>Marca</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPlainTextEdit" name="especEquip">
+         <property name="placeholderText">
+          <string>Dê algumas especificações do equipamento (lentes, alcance...)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_38">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(22, 22, 22);</string>
+         </property>
+         <property name="text">
+          <string>Especificações</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QComboBox" name="tiposEquip"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_39">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(22, 22, 22);</string>
+         </property>
+         <property name="text">
+          <string>Tipo</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="salvarEquip">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>370</y>
+        <width>111</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(0, 255, 0, 235);</string>
+      </property>
+      <property name="text">
+       <string>Salvar</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tabelaEquips">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>80</y>
+        <width>621</width>
+        <height>491</height>
+       </rect>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <column>
+       <property name="text">
+        <string>Id</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Nome</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Marca</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Especificações</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Tipo</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLabel" name="label_40">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>30</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Equipamentos registrados:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_42">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>30</y>
+        <width>251</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(22, 22, 22);</string>
+      </property>
+      <property name="text">
+       <string>Registrar Equipamento</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="homeFeed">
+     <widget class="QScrollArea" name="scrollFeed">
+      <property name="geometry">
+       <rect>
+        <x>289</x>
+        <y>-1</y>
+        <width>571</width>
+        <height>671</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>569</width>
+         <height>669</height>
+        </rect>
+       </property>
+       <widget class="QWidget" name="verticalLayoutWidget_6">
+        <property name="geometry">
+         <rect>
+          <x>-1</x>
+          <y>-1</y>
+          <width>571</width>
+          <height>671</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="layoutFeed"/>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_30">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(27, 27, 27);</string>
+      </property>
+      <property name="text">
+       <string>Publicar</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="descPubli">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>261</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Conte-nos o que você avistou</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget_9">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>300</y>
+        <width>201</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_13">
+       <item row="0" column="0" colspan="2">
+        <layout class="QVBoxLayout" name="avistPubli">
+         <item>
+          <widget class="QComboBox" name="avist1"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>270</y>
+        <width>191</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(6, 6, 6);</string>
+      </property>
+      <property name="text">
+       <string>Selecione os avistamentos</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="maisAvists">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>304</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 255, 0);
+background-color: rgba(255, 255, 255, 0);
+border: 0px;</string>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="menosAvists">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>304</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 0, 0);
+background-color: rgba(255, 255, 255, 0);
+border: 0px;</string>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="enviarPubli">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>30</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(21, 21, 21);
+border-color: rgba(170, 0, 127, 150);
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 235, 235, 206), stop:0.35 rgba(255, 188, 188, 80), stop:0.4 rgba(255, 162, 162, 80), stop:0.425 rgba(255, 132, 132, 156), stop:0.44 rgba(252, 128, 128, 80), stop:1 rgba(255, 255, 255, 0));</string>
+      </property>
+      <property name="text">
+       <string>Enviar</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>0</y>
+      <width>21</width>
+      <height>671</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionFoto"/>
+   </widget>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionFoto">
+   <property name="text">
+    <string>Autor</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
